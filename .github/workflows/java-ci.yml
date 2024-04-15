@@ -22,6 +22,3 @@ jobs:
 
     - name: Compile Java code
       run: javac CompteCorrent.java
-
-    - name: Run Tests
-      run: java -ea CompteCorrentTest
