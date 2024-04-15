@@ -21,7 +21,7 @@ jobs:
         distribution: 'adopt' # Opcions: 'adopt', 'adopt-hotspot', 'adopt-openj9', 'amazon-corretto', 'azul-zulu', 'bellsoft', 'hibernate', 'temurin'
 
     - name: Compile Java code
-      run: javac compteCorrent.java
+      run: javac CompteCorrent.java
 
     - name: Run Tests
       run: java -ea CompteCorrentTest
