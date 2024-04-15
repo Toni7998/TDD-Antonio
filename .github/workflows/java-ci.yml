@@ -18,10 +18,10 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
+        distribution: 'adopt' # Opcions: 'adopt', 'adopt-hotspot', 'adopt-openj9', 'amazon-corretto', 'azul-zulu', 'bellsoft', 'hibernate', 'temurin'
 
-    - name: Build with Gradle
-      run: ./gradlew build --no-daemon
+    - name: Compile Java code
+      run: javac CompteCorrent.java
 
     - name: Run Tests
-      run: ./gradlew test --no-daemon
-
+      run: java -ea CompteCorrentTest
